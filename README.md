@@ -34,7 +34,7 @@ ctr.labelTitle = "new" // 自动调用 updateViews()
 ```
 @State([.immediately, .ignoreFilter]) var image = UIImage()
 ```
-immediately 代表会在设置后回调 updateViews, 如果没有设置则代表会在当前 runloop 触发 CATransaction 刷新前统一调用 updateViews 避免多个成员变化触发多次 updateViews 方法
+immediately 代表会在设置后立刻回调 updateViews, 如果没有设置则代表会在当前 runloop 触发 CATransaction 刷新前统一调用 updateViews 避免多个成员变化触发多次 updateViews 方法
 
 ignoreFilter 代表禁用过滤, 默认如果右值为 Equtable 的时候会判断值是否有变化, 有变化才会触发刷新, 等价于:
 ```
