@@ -1,4 +1,4 @@
-# UIViewStateable
+# UIViewState
 
 让 UIKit 的数据流更像 SwiftUI
 
@@ -15,11 +15,11 @@ https://github.com/ReSwift/ReSwift
 ## 简单用法:
 
 ```
-class ViewController: UIViewController, UIViewStateable {
+class ViewController: UIViewController, UIViewState {
   @State var labelTitle: String?
   ...
   
-  func updateViews() { // UIViewStateable 协议需要实现的方法
+  func updateViews() { // UIViewState 协议需要实现的方法
     label.text = labelTitle
   }
 }
