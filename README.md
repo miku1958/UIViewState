@@ -1,5 +1,9 @@
 # UIViewState
 
+目前为止这个库仍然只是玩具
+
+So far this library is still just a toy
+
 让 UIKit 的数据流更像 SwiftUI
 
 灵感来自: 
