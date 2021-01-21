@@ -53,3 +53,6 @@ _image.setIntercept { (self, image) in
 }
 ```
 如果使用了 setIntercept, 那么当 image 发生变化时就不会调用 updateViews 而是会通过这个闭包进行更新
+
+## TODO
+实现类似于label.setText($text)的效果
